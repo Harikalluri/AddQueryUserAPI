@@ -14,5 +14,5 @@ The frontend was designed to offer a seamless and intuitive user experience. The
 The User Listing Page was developed to dynamically display stored user information in a tabular format. A search bar was integrated to allow users to filter displayed information in real time, utilizing client-side filtering for enhanced user experience and quick searches. 
 
  **Conclusion**
-The project successfully delivers a secure and intuitive system for managing user information. The backend ensures data integrity and authentication using AES encryption, while the frontend provides an interactive and responsive interface. Future enhancements may include role-based access control, UI/UX improvements, and additional search capabilities.
+The project successfully delivers a secure and intuitive system for managing user information. The backend ensures data integrity and authentication using AES encryption, while the frontend provides an interactive and responsive interface. Future enhancements may include role-based access control, UI improvements, and additional search capabilities.
 
