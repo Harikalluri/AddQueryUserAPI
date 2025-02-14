@@ -1,0 +1,97 @@
+/* Add.css */
+#main2 {
+    height: 100vh; /* Full viewport height */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #1d2228, #1d2228);
+    padding: 10px; /* Reduced padding to fit everything */
+}
+
+#add {
+    background: rgba(29, 34, 40, 0.9);
+    backdrop-filter: blur(10px);
+    padding: 1.5rem; /* Reduced padding */
+    border-radius: 15px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    animation: fadeIn 0.5s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 360px; /* Slightly reduced width for better fit */
+}
+
+/* Uniform input spacing */
+#addTable {
+    border-spacing: 0;
+    width: 100%;
+}
+
+/* Ensure all input fields have the same width and spacing */
+#addTable input {
+    width: 90%;
+    padding: 10px; /* Slightly reduced padding */
+    margin-bottom: 10px; /* Equal spacing between input fields */
+    border: 1px solid rgba(225, 226, 226, 0.1);
+    border-radius: 8px;
+    background: rgba(225, 226, 226, 0.05);
+    color: #e1e2e2;
+    transition: all 0.3s ease;
+}
+
+/* Ensure input fields don't change sizes */
+#addTable tr {
+    width: 100%;
+}
+
+/* Input focus effect */
+#addTable input:focus {
+    outline: none;
+    background: rgba(225, 226, 226, 0.1);
+    border: 1px solid #fb8122;
+    box-shadow: 0 0 10px rgba(251, 129, 34, 0.3);
+    transform: translateY(-2px);
+}
+
+/* Make buttons the same width as input fields */
+button {
+    width: 100%;
+    max-width: 360px; /* Ensuring it matches the input field width */
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    background: #fb8122;
+    color: #e1e2e2;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-align: center;
+    margin-top: 10px; /* Added small gap between input & button */
+}
+
+/* Reduce space between buttons slightly */
+button + button {
+    margin-top: 8px; /* Smaller gap between buttons */
+}
+
+/* Remove unnecessary margins */
+.add,
+.login {
+    width: 100%; /* Matching input width */
+    margin-left: 0; /* Center aligned */
+}
+
+/* Button hover effect */
+button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(251, 129, 34, 0.3);
+}
+
+/* Validation error messages */
+div[style*="color: red"] {
+    color: #fb8122 !important;
+    font-size: 0.8rem;
+    margin-top: 3px;
+    animation: shake 0.5s ease-in-out;
+}
